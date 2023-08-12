@@ -1,0 +1,12 @@
+
+1) :- Smooth Scrolling (Locomotive js)
+    1st :- Search Locomotive Js and open github link
+    2nd :- click on css file and take the code and paste it in your project's loco.css file and link css with html page.
+    3rd :- Take smooth js code and paste it in your js.
+    4th :- put locomotive js cdn link (Search locomotive js cdn and open smooth js file (scroll min js file , last file) in browser and take url of that)
+
+
+
+2) :- Gsap
+    1st :- Search Gsap cdn and open first page and copy first link and page it as js file(Above upon closing bracket o body tag.)
+
