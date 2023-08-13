@@ -1,10 +1,12 @@
-@import url('https://fonts.cdnfonts.com/css/general-sans');   
+@import url('https://fonts.cdnfonts.com/css/general-sans');
 /* Font imort here ------> */
 
 
 
-*{
-   margin: 0;padding: 0;box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     /* font-family: "General Sans"; */
     font-family: 'General Sans', sans-serif;
 }
@@ -12,19 +14,21 @@
 
 
 
-html , body{
+html, body {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
-#main{
+#main {
     width: 100%;
     background-color: #000;
 }
 
+/* Faloow mause css code here  */
 
-#fallow_mouse{
+#fallow_mouse {
     position: absolute;
+    left: 150px;
     height: 10px;
     width: 10px;
     background-color: white;
@@ -34,25 +38,42 @@ html , body{
 }
 
 
+/* fOR Animation on text on reload page here css code. */
+
+.animi_rapper {
+    width: fit-content;
+    overflow: hidden;
+}
+
+
+.animi_rapper .animi_content {
+
+    transform: translateY(100%);
+
+}
+
+
+
 
 /* Arrow right code here ----> */
 
 
-.for_arrow_right{
+.for_arrow_right {
     transition: 350ms ease-in-out;
     border-bottom: 1px solid transparent;
+    width: fit-content;
 }
 
-.for_arrow_right:hover{
+.for_arrow_right:hover {
     border-bottom: 1px solid #888;
 }
 
 
-.ri-arrow-right-up-line{
+.ri-arrow-right-up-line {
     transition: 350ms ease-in-out all;
 }
 
-.for_arrow_right:hover .ri-arrow-right-up-line{
+.for_arrow_right:hover .ri-arrow-right-up-line {
     display: inline-block;
     transform: rotate(35deg);
     padding-left: 5px;
@@ -60,13 +81,13 @@ html , body{
 
 
 
-#main{
+#main {
     width: 100%;
     background-color: black;
     color: #fff;
 }
 
-#nav{
+#nav {
     padding: 2vw;
     display: flex;
     justify-content: space-between;
@@ -79,7 +100,7 @@ html , body{
 }
 
 
-#nav > a{
+#nav>a {
     color: #fff;
     text-decoration: none;
 
@@ -87,9 +108,9 @@ html , body{
 
 
 
-#home{
+#home {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
     color: white;
     padding: 2vw;
@@ -99,11 +120,11 @@ html , body{
 
 
 
-#haeading_main{
+#haeading_main {
     margin-top: 50px;
 }
 
-#haeading_main  h1{
+#haeading_main h1 {
     font-size: 9vw;
     margin-left: 2vw;
     opacity: 0.7;
@@ -113,13 +134,17 @@ html , body{
 
 
 
-#last_of_heading{
+#last_of_heading {
 
     width: fit-content;
     padding-left: 10vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
-#last_of_heading > h5{
+#last_of_heading>h5 {
     text-align: right;
     font-size: 1vw;
     text-transform: uppercase;
@@ -128,42 +153,47 @@ html , body{
 
 
 
-#some_small_headings{
+#some_small_headings {
     margin-top: 130px;
     text-align: right;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     opacity: .7;
-   line-height: 30px;
+    line-height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 
-#home_footer{
+#home_footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-top: 10px;
 }
 
 
-#home_footer > a{
+#home_footer>a {
     color: #fff;
     text-decoration: none;
 }
 
 
-#home_footer > #home_log{
+#home_footer>#home_log {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 
-#home_footer > #home_log >div{
+#home_footer>#home_log>div {
     width: 25px;
     height: 25px;
     background-color: #888;
     color: black;
     font-weight: bold;
-    border-radius: 50%; 
+    border-radius: 50%;
 
     display: flex;
     justify-content: center;
@@ -175,13 +205,13 @@ html , body{
 }
 
 
-#home_log >div:hover .foot_logo{
+#home_log>div:hover .foot_logo {
     transform: translateY(20px);
     font-weight: bold;
 }
 
 
-.foot_logo{
+.foot_logo {
 
     transform: translateY(-3px);
     transition: all 500ms ease-in-out;
@@ -191,16 +221,16 @@ html , body{
 
 
 
-#second_main{
+#second_main {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
     color: #fff;
-    padding: 70px 2vw;
+    padding: 5vw 2vw;
 }
 
 
-#second_main > .elem{
+#second_main>.elem {
     width: 90%;
     border-top: 1px solid #888;
     margin: 15px 0;
@@ -212,33 +242,33 @@ html , body{
 }
 
 
-#second_main > .elem:hover .image_in_second{
+#second_main>.elem:hover .image_in_second {
 
     display: block;
     z-index: 999;
 }
 
 
-#second_main > .elem:hover .elem_heading{
+#second_main>.elem:hover .elem_heading {
     opacity: .5;
     transform: translateX(25px);
 }
 
 
-#second_main > .elem:last-child{
+#second_main>.elem:last-child {
     border-bottom: 1px solid #888;
 }
 
 
 
-#second_main  .image_in_second{
+#second_main .image_in_second {
     position: absolute;
     width: 50vh;
     display: none;
     transition: 1s all ease-in-out;
 }
 
-#second_main .elem_heading{
+#second_main .elem_heading {
     font-size: 8vw;
     text-transform: uppercase;
     opacity: .7;
@@ -247,13 +277,13 @@ html , body{
 }
 
 
-#second_main > .elem h6{
-    font-size: 1vw;
+#second_main>.elem h6 {
+    font-size: .9rem;
 }
 
 
 
-#third_main{
+#third_main {
     width: 100%;
     color: white;
     background-color: black;
@@ -262,33 +292,34 @@ html , body{
     justify-content: center;
     padding: 2vw 0;
 
-    padding-left: 30%;
+    padding-left: 30vw;
 }
 
 
-#third_main > img{
+#third_main>img {
     width: 250px;
 }
 
 
-#third_main > #text_in_third{
-    width: 30rem ;
+#third_main>#text_in_third {
+    width: 30rem;
     margin-left: 5vw;
+    padding: 1vh;
 }
 
 
-#text_in_third > h4{
-    font-size: 1vw;
+#text_in_third>h4 {
+    font-size: .8rem;
     opacity: .7;
     margin: 1vh 0;
 }
 
 
-#text_in_third > p{
+#text_in_third>p {
     margin-bottom: 2vh;
 }
 
-#text_in_third  a{
+#text_in_third a {
     color: white;
     text-decoration: none;
     margin-top: 20px;
@@ -298,14 +329,14 @@ html , body{
     font-weight: bold;
 }
 
-#text_in_third > a:hover{
+#text_in_third>a:hover {
     background: #fff;
     color: #000;
 }
 
 
 
-#last_footer{
+#last_footer {
     width: 100%;
     background-color: black;
     color: #fff;
@@ -314,35 +345,89 @@ html , body{
     padding-top: 150px;
 }
 
-#last_footer>h4:first-child{
+#last_footer>h4:first-child {
     opacity: .7;
     margin-bottom: 10px;
 }
 
-#last_footer > div{
+#last_footer>div {
     display: flex;
     justify-content: space-between;
-    
-margin-top: 150px;
+    align-items: center;
+
+    margin-top: 150px;
 }
 
 
-#left_foot>a{
+#left_foot>a {
     color: white;
     text-decoration: none;
-    border: 1px solid black;
     padding: 1vh;
 }
 
 
-#right_foot>a{
+#right_foot>a {
     color: white;
     text-decoration: none;
-    border: 1px solid black;
-    padding: 0 1vh ;
+    padding: 0 1vh;
     transition: 400ms all ease-in-out;
 }
 
-#right_foot>a:hover{
+#right_foot>a:hover {
     border-bottom: 1px solid #888;
+}
+
+
+
+
+
+
+/* BreakPoints starts here --------> */
+
+
+
+@media (max-width : 890px) {
+
+    #some_small_headings {
+        font-size: 0.65rem;
+        line-height: 15px;
+    }
+
+    #home_footer>a {
+        font-size: 0.7rem;
+    }
+
+
+    #home_footer>#home_log>div {
+        width: 20px;
+        height: 20px;
+    }
+
+    #second_main>.elem h6 {
+        font-size: .7rem;
+    }
+
+    #third_main {
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    #third_main>img {
+        width: 35vw;
+    }
+
+    #third_main>#text_in_third {
+        width: fit-content;
+
+    }
+
+    #last_footer {
+        font-size: .6rem;
+        padding-top: 75px;
+    }
+
+    #last_footer>div {
+        margin-top: 75px;
+    }
+
 }
