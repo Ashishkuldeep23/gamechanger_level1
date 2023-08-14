@@ -127,58 +127,54 @@ fallowMouse();
 document.querySelectorAll(".elem").forEach(function (singleElem) {
 
 
-        // console.log(singleElem.getBoundingClientRect().top)
+    // console.log(singleElem.getBoundingClientRect().top)
 
 
-        // // // Both var for rotate
-        let rotate = 0;
-        let preValue = 0
+    // // // Both var for rotate
+    let rotate = 0;
+    let preValue = 0
 
 
-        // // // Pic hide 
-        singleElem.addEventListener("mouseleave", function (details) {
+    // // // Pic hide 
+    singleElem.addEventListener("mouseleave", function (details) {
 
-            gsap.to(singleElem.querySelector("img"), {
-                opacity: 0,
-                ease: Power1,
-            })
-
-        })
-
-
-        // //  // pic visiable
-        singleElem.addEventListener("mousemove", function (details) {
-
-
-            // singleElem.querySelector(".image_in_second").style.transform =  `translate(${details.clientX}px , 0px)`
-
-            // console.log(details.clientY , singleElem.getBoundingClientRect().top , singleElem.getBoundingClientRect().y)
-
-            let yDiff = details.clientY - singleElem.getBoundingClientRect().y;
-
-            // console.log(yDiff)
-
-
-
-            preValue = details.clientX - rotate;
-            rotate = details.clientX
-
-
-            gsap.to(singleElem.querySelector("img"), {
-                opacity: 1,
-                ease: Power1,
-                top: yDiff - 40,
-                left: details.clientX - 150,
-                rotate: gsap.utils.clamp(-10, 10, preValue)
-            })
-
-
-
-
+        gsap.to(singleElem.querySelector("img"), {
+            opacity: 0,
+            ease: Power1,
         })
 
     })
 
 
+    // //  // pic visiable
+    singleElem.addEventListener("mousemove", function (details) {
 
 
+        // singleElem.querySelector(".image_in_second").style.transform =  `translate(${details.clientX}px , 0px)`
+
+        // console.log(details.clientY , singleElem.getBoundingClientRect().top , singleElem.getBoundingClientRect().y)
+
+        let yDiff = details.clientY - singleElem.getBoundingClientRect().y;
+
+        // console.log(yDiff)
+
+
+
+        preValue = details.clientX - rotate;
+        rotate = details.clientX
+
+
+        gsap.to(singleElem.querySelector("img"), {
+            opacity: 1,
+            ease: Power1,
+            top: yDiff,
+            left: details.clientX - 150,
+            rotate: gsap.utils.clamp(-10, 10, preValue)
+        })
+
+
+
+
+    })
+
+})
