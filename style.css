@@ -22,7 +22,7 @@ html, body {
 /* Faloow mause css code here  */
 
 #fallow_mouse {
-    position: absolute;
+    position: fixed;
     left: 150px;
     height: 7px;
     width: 7px;
